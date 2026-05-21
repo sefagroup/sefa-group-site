@@ -89,6 +89,53 @@
         <p class="eyebrow red">Noleggio auto</p>
         <h2>Scegli l’auto, le date e parti senza pensieri.</h2>
         <p>Noleggio a breve, medio e lungo termine per privati, aziende e professionisti. Richiedi un preventivo personalizzato.</p>
+    <section class="rental-search-box">
+  <h2>Noleggia il tuo veicolo</h2>
+
+  <div class="vehicle-type">
+    <button class="active">🚗 Auto</button>
+    <button>🚚 Furgoni</button>
+  </div>
+
+  <div class="rental-form">
+    <div>
+      <label>Data ritiro</label>
+      <input type="date" id="dataRitiro">
+    </div>
+
+    <div>
+      <label>Ora ritiro</label>
+      <input type="time" id="oraRitiro" value="09:00">
+    </div>
+
+    <div>
+      <label>Data riconsegna</label>
+      <input type="date" id="dataConsegna">
+    </div>
+
+    <div>
+      <label>Ora riconsegna</label>
+      <input type="time" id="oraConsegna" value="09:00">
+    </div>
+
+    <button onclick="vaiAlNoleggio()">Cerca</button>
+  </div>
+</section>
+
+<script>
+function vaiAlNoleggio() {
+  const ritiro = document.getElementById("dataRitiro").value;
+  const oraRitiro = document.getElementById("oraRitiro").value;
+  const consegna = document.getElementById("dataConsegna").value;
+  const oraConsegna = document.getElementById("oraConsegna").value;
+
+  window.location.href =
+    "https://sefagroup.it/noleggio.html?ritiro=" + ritiro +
+    "&oraRitiro=" + oraRitiro +
+    "&consegna=" + consegna +
+    "&oraConsegna=" + oraConsegna;
+}
+</script>
       </div>
       <div class="info-box">
         <h3>Servizi disponibili</h3>
