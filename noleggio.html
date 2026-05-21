@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noleggio Auto e Furgoni | SEFA GROUP SRLS</title>
+  <meta name="description" content="Noleggio auto, furgoni piccoli, furgoni grandi e veicoli con sponda idraulica. SEFA GROUP SRLS - Cassano delle Murge, Bari." />
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#fff}a{text-decoration:none;color:inherit}.topbar{background:#020617;border-bottom:1px solid rgba(255,255,255,.1);position:sticky;top:0;z-index:10}.nav{max-width:1200px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brand img{height:58px;width:auto}.brand-text strong{display:block;font-size:20px}.brand-text span{color:#94a3b8;font-size:13px}.menu{display:flex;gap:20px;color:#cbd5e1;font-size:14px}.hero{background:radial-gradient(circle at top right,rgba(220,38,38,.35),transparent 35%),linear-gradient(135deg,#020617,#111827);padding:70px 20px 50px}.hero-inner{max-width:1200px;margin:auto}.hero h1{font-size:46px;line-height:1.05;margin:0 0 18px}.hero p{font-size:18px;line-height:1.6;color:#cbd5e1;max-width:780px}.search-box{max-width:1200px;margin:-35px auto 35px;padding:20px;background:#fff;color:#111827;border-radius:24px;box-shadow:0 25px 60px rgba(0,0,0,.35);display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:14px}.field label{display:block;font-size:12px;font-weight:bold;text-transform:uppercase;color:#64748b;margin-bottom:7px}.field input,.field select{width:100%;height:48px;border:1px solid #d1d5db;border-radius:14px;padding:0 14px;font-size:15px}.btn{border:0;border-radius:14px;background:#dc2626;color:#fff;font-weight:bold;padding:0 24px;height:48px;cursor:pointer}.layout{max-width:1200px;margin:0 auto;padding:0 20px 70px;display:grid;grid-template-columns:260px 1fr;gap:28px}.filters{background:#111827;border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:22px;height:max-content;position:sticky;top:105px}.filters h3{margin:0 0 16px}.filter-group{margin-bottom:22px}.filter-group h4{font-size:13px;text-transform:uppercase;color:#94a3b8;margin:0 0 10px}.check{display:flex;align-items:center;gap:10px;margin:10px 0;color:#e5e7eb;font-size:15px}.results-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}.results-head h2{margin:0;font-size:28px}.results-head p{margin:8px 0 0;color:#94a3b8}.vehicles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:#111827;border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.22)}.card img{width:100%;height:220px;object-fit:cover;background:#1f2937}.card-body{padding:20px}.badge{display:inline-flex;background:#fff;color:#111827;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:bold;margin-bottom:10px}.card h3{font-size:24px;margin:4px 0 8px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.meta span{background:#0f172a;border:1px solid rgba(255,255,255,.1);padding:8px 10px;border-radius:999px;color:#cbd5e1;font-size:13px}.price-row{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.1);padding-top:16px;margin-top:16px;gap:14px}.price small{display:block;color:#94a3b8}.price strong{font-size:28px}.whatsapp{background:#22c55e;color:#052e16;border-radius:14px;padding:13px 16px;font-weight:bold;white-space:nowrap}.empty{display:none;background:#111827;border:1px solid rgba(255,255,255,.1);padding:30px;border-radius:22px;text-align:center;color:#cbd5e1}.footer{border-top:1px solid rgba(255,255,255,.1);padding:30px 20px;text-align:center;color:#94a3b8;background:#020617}@media(max-width:900px){.search-box{grid-template-columns:1fr}.layout{grid-template-columns:1fr}.filters{position:static}.vehicles{grid-template-columns:1fr}.hero h1{font-size:36px}.menu{display:none}.results-head{display:block}.brand img{height:48px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <img src="logo-sefa-group.png" alt="SEFA GROUP" onerror="this.style.display='none'" />
+        <div class="brand-text"><strong>SEFA GROUP SRLS</strong><span>Vendita Auto Usate · Noleggio · NCC</span></div>
+      </a>
+      <nav class="menu"><a href="index.html">Home</a><a href="noleggio.html">Noleggio</a><a href="https://wa.me/393893121737">WhatsApp</a></nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Noleggio auto e furgoni</h1>
+      <p>Seleziona le date, scegli la categoria e filtra i mezzi disponibili. Trovi auto, furgoni piccoli, medi, grandi e veicoli con sponda idraulica.</p>
+    </div>
+  </section>
+
+  <section class="search-box">
+    <div class="field"><label>Data ritiro</label><input id="dataRitiro" type="date"></div>
+    <div class="field"><label>Data consegna</label><input id="dataConsegna" type="date"></div>
+    <div class="field"><label>Categoria</label><select id="categoria"><option value="tutte">Tutte le categorie</option><option value="Auto">Auto</option><option value="Furgone Piccolo">Furgone piccolo</option><option value="Furgone Medio">Furgone medio</option><option value="Furgone Grande">Furgone grande</option></select></div>
+    <button class="btn" onclick="filtraVeicoli()">Cerca</button>
+  </section>
+
+  <main class="layout">
+    <aside class="filters">
+      <h3>Filtra risultati</h3>
+      <div class="filter-group"><h4>Tipo veicolo</h4>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="categoria" value="Auto"> Auto</label>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="categoria" value="Furgone Piccolo"> Furgone piccolo</label>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="categoria" value="Furgone Medio"> Furgone medio</label>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="categoria" value="Furgone Grande"> Furgone grande</label>
+      </div>
+      <div class="filter-group"><h4>Caratteristiche</h4>
+        <label class="check"><input type="checkbox" id="soloSponda"> Sponda idraulica</label>
+        <label class="check"><input type="checkbox" id="soloAutomatico"> Cambio automatico</label>
+      </div>
+      <div class="filter-group"><h4>Carburante</h4>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="carburante" value="Diesel"> Diesel</label>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="carburante" value="Benzina"> Benzina</label>
+        <label class="check"><input type="checkbox" class="filtro" data-filter="carburante" value="Ibrida"> Ibrida</label>
+      </div>
+    </aside>
+
+    <section>
+      <div class="results-head"><div><h2>Veicoli disponibili</h2><p id="countText">Seleziona i filtri per trovare il mezzo adatto.</p></div></div>
+      <div id="vehiclesGrid" class="vehicles"></div>
+      <div id="empty" class="empty">Nessun veicolo trovato con questi filtri.</div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 SEFA GROUP SRLS · Vicolo Tarsitano 1, Cassano delle Murge (BA) · P.IVA 09122540728 · +39 389 312 1737</footer>
+
+  <script>
+    /* QUI INSERISCI E MODIFICHI IL TUO PARCO MEZZI.
+       Per ogni veicolo cambia nome, categoria, prezzo e incolla il link foto nel campo immagine. */
+    const veicoli = [
+      {
+        id: 1,
+        nome: "Fiat Panda",
+        categoria: "Auto",
+        cambio: "Manuale",
+        carburante: "Benzina",
+        posti: 5,
+        prezzoBassa: 35,
+        prezzoAlta: 49,
+        sponda: false,
+        immagine: "INCOLLA-QUI-LINK-IMMAGINE"
+      },
+      {
+        id: 2,
+        nome: "Fiat 500",
+        categoria: "Auto",
+        cambio: "Manuale",
+        carburante: "Diesel",
+        posti: 4,
+        prezzoBassa: 39,
+        prezzoAlta: 55,
+        sponda: false,
+        immagine: "INCOLLA-QUI-LINK-IMMAGINE"
+      },
+      {
+        id: 3,
+        nome: "Fiat Doblò Cargo",
+        categoria: "Furgone Piccolo",
+        cambio: "Manuale",
+        carburante: "Diesel",
+        posti: 2,
+        prezzoBassa: 55,
+        prezzoAlta: 75,
+        sponda: false,
+        immagine: "INCOLLA-QUI-LINK-IMMAGINE"
+      },
+      {
+        id: 4,
+        nome: "Fiat Ducato",
+        categoria: "Furgone Medio",
+        cambio: "Manuale",
+        carburante: "Diesel",
+        posti: 3,
+        prezzoBassa: 75,
+        prezzoAlta: 95,
+        sponda: false,
+        immagine: "INCOLLA-QUI-LINK-IMMAGINE"
+      },
+      {
+        id: 5,
+        nome: "Iveco Daily con sponda",
+        categoria: "Furgone Grande",
+        cambio: "Manuale",
+        carburante: "Diesel",
+        posti: 3,
+        prezzoBassa: 95,
+        prezzoAlta: 125,
+        sponda: true,
+        immagine: "INCOLLA-QUI-LINK-IMMAGINE"
+      }
+    ];
+
+    const grid = document.getElementById('vehiclesGrid');
+    const empty = document.getElementById('empty');
+    const countText = document.getElementById('countText');
+
+    function stagioneCorrente(){
+      const mese = new Date().getMonth() + 1;
+      return (mese >= 6 && mese <= 9) ? 'alta' : 'bassa';
+    }
+
+    function prezzoVeicolo(v){
+      return stagioneCorrente() === 'alta' ? v.prezzoAlta : v.prezzoBassa;
+    }
+
+    function valoriSelezionati(tipo){
+      return Array.from(document.querySelectorAll(`.filtro[data-filter="${tipo}"]:checked`)).map(x => x.value);
+    }
+
+    function filtraVeicoli(){
+      const categoriaSelect = document.getElementById('categoria').value;
+      const categorie = valoriSelezionati('categoria');
+      const carburanti = valoriSelezionati('carburante');
+      const soloSponda = document.getElementById('soloSponda').checked;
+      const soloAutomatico = document.getElementById('soloAutomatico').checked;
+
+      let risultati = veicoli.filter(v => {
+        const matchSelect = categoriaSelect === 'tutte' || v.categoria === categoriaSelect;
+        const matchCategoria = categorie.length === 0 || categorie.includes(v.categoria);
+        const matchCarburante = carburanti.length === 0 || carburanti.includes(v.carburante);
+        const matchSponda = !soloSponda || v.sponda === true;
+        const matchAutomatico = !soloAutomatico || v.cambio === 'Automatico';
+        return matchSelect && matchCategoria && matchCarburante && matchSponda && matchAutomatico;
+      });
+
+      renderVeicoli(risultati);
+    }
+
+    function renderVeicoli(lista){
+      grid.innerHTML = '';
+      empty.style.display = lista.length ? 'none' : 'block';
+      countText.textContent = `${lista.length} veicolo/i trovato/i`;
+
+      lista.forEach(v => {
+        const img = v.immagine && !v.immagine.includes('INCOLLA-QUI') ? v.immagine : 'https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop';
+        const dataRitiro = document.getElementById('dataRitiro').value || 'da indicare';
+        const dataConsegna = document.getElementById('dataConsegna').value || 'da indicare';
+        const messaggio = encodeURIComponent(`Ciao SEFA GROUP, vorrei richiedere disponibilità per: ${v.nome} - ${v.categoria}. Date: dal ${dataRitiro} al ${dataConsegna}. Prezzo visto sul sito: da €${prezzoVeicolo(v)}/giorno.`);
+        const spondaTxt = v.sponda ? '<span>Sponda idraulica</span>' : '';
+        grid.innerHTML += `
+          <article class="card">
+            <img src="${img}" alt="${v.nome}">
+            <div class="card-body">
+              <span class="badge">${v.categoria}</span>
+              <h3>${v.nome}</h3>
+              <div class="meta">
+                <span>${v.cambio}</span><span>${v.carburante}</span><span>${v.posti} posti</span>${spondaTxt}
+              </div>
+              <div class="price-row">
+                <div class="price"><small>Prezzo da</small><strong>€${prezzoVeicolo(v)}/giorno</strong></div>
+                <a class="whatsapp" href="https://wa.me/393893121737?text=${messaggio}" target="_blank">Richiedi disponibilità</a>
+              </div>
+            </div>
+          </article>`;
+      });
+    }
+
+    document.querySelectorAll('.filtro, #soloSponda, #soloAutomatico, #categoria, #dataRitiro, #dataConsegna').forEach(el => el.addEventListener('change', filtraVeicoli));
+    renderVeicoli(veicoli);
+  </script>
+</body>
+</html>
