@@ -64,7 +64,3 @@
     grid-template-columns: 1fr;
   }
 }
-.logo img{
-    height: 140px !important;
-    width: auto;
-}
